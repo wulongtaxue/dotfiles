@@ -1,0 +1,42 @@
+"1.1
+
+loadplugins '\.(js|penta)$'
+group user
+set guioptions=bCrsTB
+
+" vim: set ft=pentadactyl:
+
+"set nextpattern='\s*(下一页|下一张|下一篇|下一章|下页|后页)\s*','^\bnext\b','\\bnext\\b','^>$','^(>>|?)$','^(>|?)','(>|?)$','\\bmore\\b'
+"set previouspattern=\s*(上一页|上一张|上一篇|上一章|上页|前页)\s*,^\bprev|previous\b,\\bprev|previous\\b,^<$,^(<<|?)$,^(<|?),(<|?)$
+
+"set nextpattern='(下|后)一?(页|頁|篇|章|张)','^\bnext\b','\bnext\b','\bsuivant\b','^(>|?)$','^(>>|?)$','^(>|?)','(>|?)$','\bmore\b'
+"set previouspattern='(上|前)一?(页|頁|篇|章|张)','^\bprev|previous\b','\bprev|previous\b','\bprécédent\b','^(<|?)$','^(<<|?)$','^(<|?)','(<|?)$'
+
+set hintkeys=hjklasdfgyuiopqwertnmzxcvb
+highlight Hint font-family: monospace; font-size: 12px; font-weight: bold; text-transform: uppercase; color: white; background-color: red; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding: 0px 1px 0px 1px;
+highlight StatusLineNormal background-color:gray
+
+
+map -m n,v,i,c,t <C-a> <Pass>
+map -m n,v,i,c,t <C-c> <Pass>
+map -m i,c,t <C-v> <Pass>
+map -m i,c,t <C-x> <Pass>
+map -m i,c,t <C-z> <Pass>
+map -m n,v,i,c,t <C-l> <Pass>
+
+map -b J <C-d>
+map -b K <C-u>
+map -b H gT
+map -b L gt
+map -b ] ]]
+map -b [ [[
+
+"ziven add some customized shortcuts
+"customize leader to ','
+map , <leader>
+"use ,z to search something in zhihu.com
+map <leader>z :tabopen site:zhihu.com<space>
+"use ,p to search something in pan.baidu.com
+map <leader>p :tabopen site:pan.baidu.com<space>
+
+map -m n,v,i,c,t <Space> <Pass>

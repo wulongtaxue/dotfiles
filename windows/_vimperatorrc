@@ -1,0 +1,29 @@
+"3.7 (created: 2013/04/03 18:20:07)
+
+map J <C-d>
+map K <C-u>
+map H gT
+map L gt
+map ] ]]
+map [ [[
+source! "C:\\Users\\wulongtaxue\\_vimperatorrc.local"
+
+" vim: set ft=vimperator:
+
+"set nextpattern='\s*(下一页|下一张|下一篇|下一章|下页|后页)\s*','^\bnext\b','\\bnext\\b','^>$','^(>>|?)$','^(>|?)','(>|?)$','\\bmore\\b'
+"set previouspattern=\s*(上一页|上一张|上一篇|上一章|上页|前页)\s*,^\bprev|previous\b,\\bprev|previous\\b,^<$,^(<<|?)$,^(<|?),(<|?)$
+
+"set nextpattern='(下|后)一?(页|頁|篇|章|张)','^\bnext\b','\bnext\b','\bsuivant\b','^(>|?)$','^(>>|?)$','^(>|?)','(>|?)$','\bmore\b'
+"set previouspattern='(上|前)一?(页|頁|篇|章|张)','^\bprev|previous\b','\bprev|previous\b','\bprécédent\b','^(<|?)$','^(<<|?)$','^(<|?)','(<|?)$'
+
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+highlight Hint font-family: monospace; font-size: 12px; font-weight: bold; text-transform: uppercase; color: white; background-color: red; border-color: ButtonShadow; border-width: 0px; border-style: solid; padding: 0px 1px 0px 1px;
+
+
+"ziven add some customized shortcuts
+"customize leader to ','
+:let mapleader=","
+"use ,z to search something in zhihu.com
+noremap <leader>z :tabopen site:zhihu.com<space>
+"use ,p to search something in pan.baidu.com
+noremap <leader>p :tabopen site:pan.baidu.com<space>
