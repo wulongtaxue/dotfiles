@@ -1,0 +1,56 @@
+[gui]
+	fontui = -family \"wenquanyi bitmap song\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"wenquanyi bitmap song\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+	spellingdictionary = en
+[alias]
+	pl = pull
+	ps = push
+	st = status
+	ci = commit
+	co = checkout
+	fe = fetch
+	fp = format-patch
+	br = branch
+	cm = commit -m
+	rb = rebase
+	me = merge
+	cl = clean
+	cn = clone
+	rs = reset
+	rv = revert
+	de = describe
+	chp = cherry-pick
+	re = remote
+	cf = cat-file
+	rp = rev-parse
+	rt = read-tree
+	wt = write-tree
+	ct = commit-tree
+	wch = whatchanged
+	glog = log --graph
+	dlog = log --oneline --decorate
+	llog = log --oneline
+	slog = log --stat
+	plog = log -p
+	ss = status -s
+	stu = status --untracked-files=no
+	pst = push --tags
+	rsh = reset --hard
+	clx = clean -dfx
+	lg = log --pretty=format:'commit %C(red dim)%H%Creset%nAuthor:  %C(yellow dim)%aE%Creset%nDate:  %C(green dim)%ci%Creset%n%n   %C(bold)%s%Creset%n%n    %b'
+	llg = log --graph  --pretty=format:'%C(red dim)%h%d%Creset %C(blue dim)%s%Creset  <%C(green dim)%ci%Creset>'
+    diffc = diff --cached
+[push]
+	default = matching
+[core]
+	autocrlf = input
+[color]
+	ui = auto
+
+
+[diff]
+    tool = bc3
+[difftool]
+    prompt = false
+[difftool "bc3"]
+    trustExitCode = true
