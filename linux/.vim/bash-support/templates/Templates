@@ -1,0 +1,19 @@
+
+§ =============================================================
+§ ========== USER MACROS ======================================
+§ =============================================================
+§
+|AUTHOR|       = ziven
+|AUTHORREF|    = http://blog.csdn.net/ziven2012
+|EMAIL|        =                  
+|ORGANIZATION| = haier
+|COPYRIGHT|    = Copyright (c) |YEAR|, |AUTHOR|
+§
+§ =============================================================
+§ ========== FILE INCLUDES ====================================
+§ =============================================================
+§
+|includefile| = bash.comments.template
+|includefile| = bash.statements.template
+|includefile| = bash.paramsub.template
+§
